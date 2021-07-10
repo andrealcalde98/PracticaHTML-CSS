@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream TV</title>
+    <!-- En este html aplicamos los estilos basicos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Hoja de estilos para crear un valor por defecto -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- Hoja de estilos para el funcionamiento de la estrella de favoritos -->
+    <link rel="stylesheet" href="./css/star.css">
+
+    <!-- Estilo responsive para la barra de navegación, para la versión mobile tenemos un menu emergente, p
+        ara la version grande un menu superior horizontal -->
+    <link rel="stylesheet" type="text/css" href="./css/bignavbar.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="./css/navbar.css" media="(max-width: 768px)">
+
+    <!-- Estilo responsive para el estilo de las cartas, cuando es mobile tiene ajusta su configuración a solo dos columnss
+    cuando es en version grande tenemos 3. -->
+    <link rel="stylesheet" type="text/css" href="./css/bigcard.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="./css/card.css" media="(max-width: 768px)">
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="icono" src="./img/Logo.jpg" alt="Logo">
+        <input class="buscar" type="search" placeholder="Buscar">
+        <a class="salir" href="./index.html">
+            <img class="img" src="./img/logout.jpg" alt="salir">
+        </a>
+
+
+        <input type="checkbox" id="burger-checkbox">
+        <label for="burger-checkbox" class="burger-label"></label>
+
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="#">Novedades</a></li>
+            <li class="navbar-item"><a href="#">Series</a></li>
+            <li class="navbar-item"><a href="#">Películas</a></li>
+        </ul>
+    </nav>
+
+    <div class="grid-container">
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            13 Razones
+                            <p class="val">****</p>
+                        </div>
+                        <h2 class="card-title">
+                            Una estudiante se suicida.
+                            Una caja de cintas de casete, detallan las trece razones...
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella1" class="fav">
+                    <label for="estrella1"></label>
+                </div>
+            </article>
+        </a>
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada1.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            Lil Black Mirror
+                            <p class="val">***</p>
+                        </div>
+                        <h2 class="card-title">
+                            Basada en la serie original.
+                            Narra la vida de unos adolescentes en el mundo del futuro.
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella2" class="fav">
+                    <label for="estrella2"></label>
+                </div>
+            </article>
+        </a>
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada2.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            Riverdale
+                            <p class="val">*****</p>
+                        </div>
+                        <h2 class="card-title">
+                            Después de un asesinato se descubren los secretos más oscuros de la ciudad...
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella3" class="fav">
+                    <label for="estrella3"></label>
+                </div>
+            </article>
+        </a>
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            13 Razones
+                            <p class="val">****</p>
+                        </div>
+                        <h2 class="card-title">
+                            Una estudiante se suicida.
+                            Una caja de cintas de casete, detallan las trece razones...
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella4" class="fav">
+                    <label for="estrella4"></label>
+                </div>
+            </article>
+        </a>
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada1.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            Lil Black Mirror
+                            <p class="val">***</p>
+                        </div>
+                        <h2 class="card-title">
+                            Basada en la serie original.
+                            Narra la vida de unos adolescentes en el mundo del futuro.
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella5" class="fav">
+                    <label for="estrella5"></label>
+                </div>
+            </article>
+        </a>
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada2.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            Riverdale
+                            <p class="val">*****</p>
+                        </div>
+                        <h2 class="card-title">
+                            Después de un asesinato se descubren los secretos más oscuros de la ciudad...
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella6" class="fav">
+                    <label for="estrella6"></label>
+                </div>
+            </article>
+        </a>
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            13 Razones
+                            <p class="val">****</p>
+                        </div>
+                        <h2 class="card-title">
+                            Una estudiante se suicida.
+                            Una caja de cintas de casete, detallan las trece razones...
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella7" class="fav">
+                    <label for="estrella7"></label>
+                </div>
+            </article>
+        </a>
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada1.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            Lil Black Mirror
+                            <p class="val">***</p>
+                        </div>
+                        <h2 class="card-title">
+                            Basada en la serie original.
+                            Narra la vida de unos adolescentes en el mundo del futuro.
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella8" class="fav">
+                    <label for="estrella8"></label>
+                </div>
+            </article>
+        </a>
+
+        <a href="fichadetalle.html">
+            <article class="card">
+                <div>
+                    <img class="card-img" src="./img/portada2.jpg" alt="">
+                </div>
+                <div class="card-text">
+                    <div class="container">
+                        <div class="tags">
+                            Riverdale
+                            <p class="val">*****</p>
+                        </div>
+                        <h2 class="card-title">
+                            Después de un asesinato se descubren los secretos más oscuros de la ciudad...
+                        </h2>
+                        <div class="card-date">Año 2017</div>
+                    </div>
+                </div>
+                <div class="fav-container">
+                    <input type="checkbox" id="estrella9" class="fav">
+                    <label for="estrella9"></label>
+                </div>
+            </article>
+        </a>
+    </div>
+</body>
+
+</html>

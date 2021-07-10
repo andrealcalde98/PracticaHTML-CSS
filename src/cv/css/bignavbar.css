@@ -1,0 +1,66 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  background-color: black;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: var(--navbar-size);
+  z-index: 999;
+}
+
+.icono {
+  line-height: var(--navbar-size);
+  width: 60px;
+  height: var(--navbar-size);
+  display: block;
+  margin: 0 auto;
+}
+
+.buscar {
+  position: absolute;
+  right: 70px;
+  top: calc(var(--navbar-size) - 80%);
+  color: white;
+  width: 80px;
+  height: 50%;
+}
+
+.img {
+  line-height: var(--navbar-size);
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 60px;
+}
+
+.burger-label {
+  display: none;
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+.navbar-list {
+  line-height: var(--navbar-size);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  list-style: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.navbar-item {
+  display: inline-block;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+  font-family: titulo;
+  src: url('../fonts/Lobster-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  background: url("../img/ticket.png") center center no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.message {
+  text-align: center;
+  display: block;
+  opacity: 0.8;
+  background-color: black;
+  height: 11rem;
+  position: relative;
+  top: 100px;
+}
+
+p {
+  font-family: titulo;
+  font-size: 2.5rem;
+  /* 16px (html) * 2 = 32px */
+  color: aliceblue;
+}
+
+.link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  background: white;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.meme {
+  position: relative;
+  top: 7rem;
+}
+
+.meme img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}

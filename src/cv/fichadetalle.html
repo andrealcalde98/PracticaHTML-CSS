@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream TV</title>
+    <!-- En este html aplicamos los estilos basicos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Hoja de estilos para crear un valor por defecto -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- Hoja de estilos para la propia ficha detalle -->
+    <link rel="stylesheet" href="./css/fichadetalle.css">
+
+    <!-- Estilo de la carta en recomendados en la ficha detalle con responsive para ajustar tamaño de textos-->
+    <link rel="stylesheet" type="text/css" href="./css/bigcdetail.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="./css/cdetail.css" media="(max-width: 768px)">
+
+    <!-- Estilo responsive para la barra de navegación, para la versión mobile tenemos un menu emergente, p
+            ara la version grande un menu superior horizontal -->
+    <link rel="stylesheet" type="text/css" href="./css/bignavbar.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="./css/navbar.css" media="(max-width: 768px)">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="icono" src="./img/Logo.jpg" alt="Logo">
+        <input class="buscar" type="search" placeholder="Buscar">
+        <a class="salir" href="./index.html">
+            <img class="img" src="./img/logout.jpg" alt="salir">
+        </a>
+
+
+        <input type="checkbox" id="burger-checkbox">
+        <label for="burger-checkbox" class="burger-label"></label>
+
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="principal.html">Novedades</a></li>
+            <li class="navbar-item"><a href="principal.html">Series</a></li>
+            <li class="navbar-item"><a href="principal.html">Películas</a></li>
+        </ul>
+    </nav>
+
+    <div class="tittle">
+        <h2>13 Razones</h2>
+    </div>
+    <article class="info">
+        <section class="maininfo">
+            <div class="center">
+                <span class="format">Calificación: </span>4/5<br>
+                <span class="format">Año de publicación: </span> 2017<br>
+                <span class="format">Reparto: </span>
+                Dylan Minnette,
+                Katherine Langford,
+                Christian Navarro,
+                Alisha Boe,
+                Brandon Flynn,
+                Justin Prentice,
+                Miles Heizer,
+                Ross Butler,
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="center"><span class="format">Sinopsis: </span>La trama gira en torno a una estudiante de
+                preparatoria que se
+                suicida después de una serie
+                de fracasos culminantes. Una caja de cintas de casete, detalla las trece razones por las que decidió
+                acabar con su vida.</div>
+        </section>
+
+        <video class="video" controls>
+            <source src="video/trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="recomendados">
+            <h2>Recomendado para tí: </h2>
+        </div>
+
+        <div class="grid-container">
+
+            <a href="">
+                <article class="card">
+                    <div>
+                        <img class="card-img" src="./img/portada1.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="container">
+                            <div class="tags">
+                                Lil Black Mirror
+                                <p class="val">***</p>
+                            </div>
+                            <h2 class="card-title">
+                                Basada en la serie original.
+                                Narra la vida de unos adolescentes en el mundo del futuro.
+                            </h2>
+                            <div class="card-date">Año 2017</div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="">
+                <article class="card">
+                    <div>
+                        <img class="card-img" src="./img/portada2.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="container">
+                            <div class="tags">
+                                Riverdale
+                                <p class="val">*****</p>
+                            </div>
+                            <h2 class="card-title">
+                                Después de un asesinato se descubren los secretos más oscuros de la ciudad...
+                            </h2>
+                            <div class="card-date">Año 2017</div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        </div>
+    </article>
+</body>
+
+</html>

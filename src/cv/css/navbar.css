@@ -1,0 +1,87 @@
+.navbar {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: var(--navbar-size);
+  z-index: 999;
+}
+
+.icono {
+  line-height: var(--navbar-size);
+  width: 60px;
+  height: var(--navbar-size);
+  display: block;
+  margin: 0 auto;
+}
+
+.buscar {
+  position: absolute;
+  right: 70px;
+  top: calc(var(--navbar-size) - 80%);
+  color: white;
+  width: 80px;
+  height: 50%;
+}
+
+.img {
+  line-height: var(--navbar-size);
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 60px;
+}
+
+.burger-label {
+  position: absolute;
+  top: .3rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.burger-label::before {
+  content: "";
+  background-color: white;
+  width: 2rem;
+  height: .2rem;
+  position: absolute;
+  left: .5rem;
+  top: .5rem;
+  box-shadow: 0 .45rem 0 0 white, 0 .9rem 0 0 white;
+}
+
+/* cerrado */
+
+.navbar-list {
+  display: none;
+  z-index: 999;
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+/* abierto */
+
+#burger-checkbox:checked~.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  height: calc(100vh - var(--navbar-size));
+  opacity: .85;
+}
+
+.navbar-item a {
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  line-height: 3rem;
+}

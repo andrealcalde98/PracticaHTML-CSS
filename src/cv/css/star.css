@@ -1,0 +1,34 @@
+/*desmarcado*/
+
+.fav-container {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+.fav+label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/empty.png);
+    background-size: cover;
+}
+
+/*oculatamos el input*/
+
+.fav {
+    display: none;
+}
+
+/*marcado*/
+
+.fav:checked+label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/filled.png);
+    background-size: cover;
+}
